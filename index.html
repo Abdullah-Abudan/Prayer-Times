@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body dir="rtl">
+    <div class="container">
+        <!-- City Name + Date -->
+        <div class="city-date">
+            <h1 class="city" id="city-name">غزة </h1>
+            <h6 class="date" id="date"></h6>
+            <hr>
+        </div>
+
+
+        <!-- Prayer Time -->
+        <div class="azan-container" id="">
+            <div class="azan-card">
+            <div class="azan-name">الفجر</div>
+            <div class="azan-time" id="fajr-time"></div>                
+            </div>
+            <div class="azan-card">
+            <div class="azan-name">الشروق</div>
+            <div class="azan-time" id="sunrisr-time"></div>                
+            </div>
+            <div class="azan-card">
+            <div class="azan-name">الظهر</div>
+            <div class="azan-time" id="dhuhr-time"></div>                
+            </div>
+            <div class="azan-card">
+            <div class="azan-name">العصر</div>
+            <div class="azan-time" id="asr-time"></div>                
+            </div>
+            <div class="azan-card">
+            <div class="azan-name">المغرب</div>
+            <div class="azan-time" id="sunset-time"></div>                
+            </div>
+            <div class="azan-card">
+            <div class="azan-name">العشاء</div>
+            <div class="azan-time" id="isha-time"></div>                
+            </div>
+        </div>
+
+        <!-- Select -->
+
+        <div class="container-select">
+            <select name="city" id="cities-select" required>
+                <option value="" disabled selected>اختر مدينتك</option>
+            </select>
+        </div>
+    </div>
+
+
+    <!-- Script | To use the axios library -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script> 
+
+    <!-- Script  -->
+    <script src="./main.js"></script>
+</body>
+</html>

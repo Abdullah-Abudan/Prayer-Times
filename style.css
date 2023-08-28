@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #0575e6, #021b79);
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+}
+.city-date{
+    color: white;
+}
+.city{
+    font-weight: 400;
+    font-size: 80px;
+}
+.date{
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.azan-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 40px;
+}
+.azan-card{
+    display: flex;
+    flex-direction: column;
+    width: 16.66%;
+    height: 200px;
+    box-shadow: 3px 3px 0px #00000047;
+}
+.azan-name{
+    height: 30%;
+    background: linear-gradient(to right, #eb3348, #f45c43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+.azan-time{
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 22px;
+}
+.container-select{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+select,option {
+    width: 170px;
+    font-size: 18px;
+    outline: none;
+    text-align: center;    
+    border-radius: 555px;
+    border: 2px solid #ef4545;
+    padding: 5px;
+}
